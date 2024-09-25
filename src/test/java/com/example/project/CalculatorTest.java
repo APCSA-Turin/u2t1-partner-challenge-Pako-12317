@@ -1,3 +1,4 @@
+
 package com.example.project;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -101,9 +102,8 @@ public class CalculatorTest{
          String expectedOutput = "This calculator is a model "+calculator.calcModel+
         " where "+calculator.calcModel+
         " should be filled in with the value stored in the calcModel instance variable.";
+        String studentOutput = calculator.info();
         assertEquals(expectedOutput,studentOutput);
     }
     
 }
-
-
